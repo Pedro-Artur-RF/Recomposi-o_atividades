@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;1,800&display=swap');
+
+:root{
+--LightRed: hsl(0, 100%, 67%);
+--OrangeyYellow: hsl(39, 100%, 56%);
+--GreenTeal: hsl(166, 100%, 37%);
+--CobaltBlue: hsl(234, 85%, 45%);
+
+/* ## Gradients */
+
+--LightSlateBlueBG: hsl(252, 100%, 67%);
+--LightRoyalBlueBG: hsl(241, 81%, 54%);
+
+--VioletBlueCircle: hsla(256, 72%, 46%, 1);
+--PersianBlueCircle: hsla(241, 72%, 46%, 0);
+
+
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--PaleBlue: hsl(221, 100%, 96%);
+--LightLavender: hsl(241, 100%, 89%);
+--DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+}
+
+.container{
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box{
+    width: 38rem;
+    height: 30rem;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+.score-box{
+    height: 30rem;
+    width: 19rem;
+    border-radius: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4rem;
+
+    background-image: linear-gradient(var(--LightSlateBlueBG), var(--LightRoyalBlueBG) );
+}
+
+.score-box .title{
+    font-size: 18px;
+    color: var(--LightLavender);
+}
+
+.score-circle{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--VioletBlueCircle), var(--PersianBlueCircle) );
+}
+
+.score-circle .score{
+    font-size: 70px;
+    color: var(--White);
+}
+
+.score-circle  p{
+    font-weight: 800;
+    color: var(--LightLavender);
+}
+
+.score-text{
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    align-items: center;
+    text-align:center;
+}
+
+.score-text h3{
+    color: var(--White);
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.score-text p{
+    color: var(--LightLavender);
+}
+
+.summary-box{
+    height: 30rem;
+    width: 19rem;
+    border-radius: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.summary-container{
+    height: 28rem;
+    width: 17rem;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-box{
+    border: 1px solid purple;
+    width: 16rem;
+    height: 2.8rem;
+    border-radius: 5px;
+}
+
+.skill-reaction{
+    width: 16rem;
+    height: 2.8rem;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
